@@ -2,6 +2,8 @@
 
 ## Sobre el proyecto desarrollado
 
+EL proyecto completo disponible y funcional en https://react-nodejs-challenge.vercel.app/
+
 El reto se realizó en su totalidad, acá una breve explicación de lo que se hizo, y qué lenguajes/tecnologías se usaron y por qué:
 - Se desarrolló una interfaz en React usando ShadCN y TailwindCSS para ver una lista de productos, y para crear precios especiales para estos artículos basado en el usuario que los visualiza (que tiene la sesión iniciada).
 - Ya que no se desarrolló un CRUD para usuarios ni un sistema de autenticación, se simula un caso donde el ID del usuario es "1". (Usuarios, considero que es mejor usar UUIDs).
@@ -9,6 +11,7 @@ El reto se realizó en su totalidad, acá una breve explicación de lo que se hi
 - El proyecto se desarolló totalmente en inglés (código, variables, comentarios, etc), ya que es un lenguaje universal, y es más cómodo a la hora de desarrollar.
 - Se incluye un archivo ``.env.template``, en el cual se añade la URI para la base de datos (En un ambiente de producción o open soure code, este solo representa cómo debería verse el archivo ``.env``).
 - El código en general es bastante descriptivo, por lo que no se requiere tanta documentación del mismo.
+- Se realizó un despliegue de Backend y Frontend en Vercel.
 
 ## Sobre la estructura de los proyectos:
 - Frontend: El frontend se desarrolló usando una estructura parecida a NextJS (Y recomendada por ShadCN), donde todos los componentes reutilizables (como botones, input, etc) se guardan en ``src/components/ui``, y otro tipo de componentes más comunes en ``src/components``. El resto de componentes (que contienen la interfaz haciendo uso de los reutilizables) se encuentran en ``src/pages``.
