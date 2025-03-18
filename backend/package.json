@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "rimraf ./dist && tsc",
     "tsc": "tsc",
     "old:lint": "ts-standard",
     "lint": "npx eslint .",

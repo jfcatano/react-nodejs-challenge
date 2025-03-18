@@ -2,11 +2,11 @@ import express from 'express'
 import cors from 'cors'
 import morgan from 'morgan'
 import routes from './routes'
-import { corsOptions } from './config'
+// import { corsOptions } from './config'
 const app = express()
 
 // Middlewares
-app.use(cors(corsOptions))
+app.use(cors({ origin: '*' }));
 app.use(express.json())
 app.use(morgan('dev'))
 
