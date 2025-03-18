@@ -1,0 +1,20 @@
+services:
+  api:
+    build: ./backend
+    container_name: challenge-api
+    ports:
+      - "3000:3000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    env_file:
+      - ./backend/.env
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: challenge-front
+    ports:
+      - "5173:5173"
+    env_file:
+      - ./frontend/.env
+    restart: unless-stopped
